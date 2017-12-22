@@ -20,7 +20,10 @@ RUN DEBIAN_FRONTEND="noninteractive" apt-get update \
     libmcrypt-dev \
     libxml2-dev \
     mariadb-client \
-    ssmtp
+    ssmtp \
+    telnet \
+    vim \ 
+    libssl-dev
 
 # Install additional PHP extentions
 RUN docker-php-ext-configure imap --with-kerberos --with-imap-ssl \
